@@ -33,6 +33,8 @@ type GLTFResult = GLTF & {
 const Island: React.FC<ModelsObjectDetails> = ({
   isRotating,
   setIsRotating,
+  setCurrentStage,
+  currentFocusPoint,
   ...props
 }) => {
   const islandRef = useRef();
@@ -183,7 +185,7 @@ const Island: React.FC<ModelsObjectDetails> = ({
           setCurrentStage(1);
           break;
         default:
-          setCurrentStage(null);
+          setCurrentStage(0);
       }
     }
   });
