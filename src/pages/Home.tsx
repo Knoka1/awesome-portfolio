@@ -4,11 +4,9 @@ import Loader from "../components/Loader";
 
 import Island from "../models/Island";
 import Sky from "../models/Sky";
-{
-  /* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-  POPUP
-</div> */
-}
+import Bird from "../models/Bird";
+import Plane from "../models/Plane";
+
 const Home = () => {
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -34,12 +32,14 @@ const Home = () => {
           <directionalLight position={[1, 1, 1]} intensity={1.2} />
           <ambientLight intensity={0.5} />
           <hemisphereLight color="#b1e1ff" groundColor="#000000" />
+          <Bird />
           <Sky />
           <Island
             position={islandPosition}
             scale={islandScale}
             rotation={islandRotation}
           />
+          <Plane />
         </Suspense>
       </Canvas>
     </section>
