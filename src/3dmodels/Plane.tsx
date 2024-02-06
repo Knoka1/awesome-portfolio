@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 import planeScene from "../assets/3d/plane.glb";
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { ModelsObjectDetails } from "../models/ModelsObjectDetailsModel";
-import { isPowerOfTwo } from "three/src/math/MathUtils.js";
 
 const Plane: React.FC<ModelsObjectDetails> = ({ isRotating, ...props }) => {
   const ref = useRef();
