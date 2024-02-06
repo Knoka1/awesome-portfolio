@@ -9,8 +9,8 @@ import Plane from "../3dmodels/Plane";
 import HomeInfo from "../components/HomeInfo";
 
 const Home = () => {
-  const [isRotating, setIsRotating] = useState(false);
-  const [currentStage, setCurrentStage] = useState(null);
+  const [isRotating, setIsRotating] = useState<boolean>(false);
+  const [currentStage, setCurrentStage] = useState<number | null>(null);
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];

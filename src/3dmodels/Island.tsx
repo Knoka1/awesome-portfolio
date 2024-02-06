@@ -6,12 +6,11 @@ Source: https://sketchfab.com/3d-models/foxs-islands-163b68e09fcc47618450150be77
 Title: Fox's islands
 */
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, ChangeEvent } from "react";
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 import { a } from "@react-spring/three";
-import { ModelsObjectDetails } from "../models/ModelsObjectDetailsModel";
 import islandScene from "../assets/3d/island.glb";
 import { useFrame, useThree } from "@react-three/fiber";
 
@@ -29,15 +28,23 @@ type GLTFResult = GLTF & {
     PaletteMaterial001: THREE.MeshStandardMaterial;
   };
 };
+interface ModelObjectDetails {
+  isRotating: boolean;
+  setIsRotating: React.Dispatch<React.SetStateAction<boolean>>;
+  setCurrentStage: React.Dispatch<React.SetStateAction<number | null>>;
 
-const Island: React.FC<ModelsObjectDetails> = ({
+  position: number[];
+  scale: number[];
+  rotation: number[];
+}
+
+const Island: React.FC<ModelObjectDetails> = ({
   isRotating,
   setIsRotating,
   setCurrentStage,
-  currentFocusPoint,
   ...props
 }) => {
-  const islandRef = useRef();
+  const islandRef = useRef<any>();
 
   // Get access to the Three.js renderer and viewport
   const { gl, viewport } = useThree();
@@ -64,14 +71,15 @@ const Island: React.FC<ModelsObjectDetails> = ({
   };
 
   // Handle pointer (mouse or touch) up event
-  const handlePointerUp = (event) => {
+  const handlePointerUp = (event: PointerEvent) => {
     event.stopPropagation();
     event.preventDefault();
+
     setIsRotating(false);
   };
 
   // Handle pointer (mouse or touch) move event
-  const handlePointerMove = (event) => {
+  const handlePointerMove = (event: any) => {
     event.stopPropagation();
     event.preventDefault();
     if (isRotating) {
@@ -94,7 +102,7 @@ const Island: React.FC<ModelsObjectDetails> = ({
   };
 
   // Handle keydown events
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: KeyboardEvent) => {
     if (event.key === "ArrowLeft") {
       if (!isRotating) setIsRotating(true);
 
@@ -109,7 +117,7 @@ const Island: React.FC<ModelsObjectDetails> = ({
   };
 
   // Handle keyup events
-  const handleKeyUp = (event) => {
+  const handleKeyUp = (event: KeyboardEvent) => {
     if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
       setIsRotating(false);
     }
@@ -185,7 +193,7 @@ const Island: React.FC<ModelsObjectDetails> = ({
           setCurrentStage(1);
           break;
         default:
-          setCurrentStage(0);
+          setCurrentStage(null);
       }
     }
   });

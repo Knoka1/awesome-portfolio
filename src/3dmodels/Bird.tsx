@@ -5,8 +5,8 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 import { ModelsObjectDetails } from "../models/ModelsObjectDetailsModel";
 import { useFrame } from "@react-three/fiber";
 
-const Bird: React.FC<ModelsObjectDetails> = () => {
-  const birdRef = useRef();
+const Bird = () => {
+  const birdRef = useRef<any>();
 
   // Load the 3D model and animations from the provided GLTF file
   const { scene, animations } = useGLTF(birdScene);
@@ -18,7 +18,7 @@ const Bird: React.FC<ModelsObjectDetails> = () => {
   // Note: Animation names can be found on the Sketchfab website where the 3D model is hosted.
   // Note2: Can also find the animation name by throwing it into Blender
   useEffect(() => {
-    actions["Take 001"].play();
+    actions["Take 001"]?.play();
   }, []);
 
   useFrame(({ clock, camera }) => {

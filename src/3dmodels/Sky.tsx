@@ -1,14 +1,16 @@
 import React, { useRef } from "react";
 
 import { useGLTF } from "@react-three/drei";
-import { ModelsObjectDetails } from "../models/ModelsObjectDetailsModel";
+// @ts-ignore
 import skyScene from "../assets/3d/sky.glb";
 import { useFrame } from "@react-three/fiber";
-import { HTMLMesh } from "three/examples/jsm/Addons.js";
 
-const Sky: React.FC<ModelsObjectDetails> = ({ isRotating }) => {
+interface Props {
+  isRotating: boolean;
+}
+const Sky: React.FC<Props> = ({ isRotating }) => {
   const sky = useGLTF(skyScene);
-  const skyRef = useRef();
+  const skyRef = useRef<any>();
 
   useFrame((_, delta) => {
     if (isRotating) {
