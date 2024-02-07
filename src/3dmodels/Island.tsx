@@ -11,6 +11,7 @@ import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 import { a } from "@react-spring/three";
+// @ts-ignore
 import islandScene from "../assets/3d/island.glb";
 import { useFrame, useThree } from "@react-three/fiber";
 
