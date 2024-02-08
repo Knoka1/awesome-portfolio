@@ -15,6 +15,7 @@ import react from "./react.svg";
 import redux from "./redux.svg";
 import sass from "./sass.svg";
 import tailwindcss from "./tailwindcss.svg";
+import transfero from "./transfero.svg";
 import typescript from "./typescript.svg";
 import linkedin from "./linkedin.svg";
 import microsoftsqlserver from "./microsoftsqlserver.svg";
@@ -55,6 +56,7 @@ export {
   typescript,
   linkedin,
   twitter,
+  transfero,
   car,
   estate,
   pricewise,

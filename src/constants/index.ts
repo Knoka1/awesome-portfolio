@@ -27,6 +27,7 @@ import {
   snapgram,
   summiz,
   tailwindcss,
+  transfero,
   threads,
   typescript,
 } from "../assets/icons";
@@ -106,16 +107,16 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full-Stack Software Engineer",
+    company_name: "Transfero",
+    icon: transfero,
     iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    date: "Nov 2021 - Jun 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Development of the investment platform and app Transfero Prime (React, .NET Core 5.0, C#)",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Development of the API and structure to process over $1 M a day in payments ( .NET and C#)",
+      "Creation of a bot responsible for keeping track of various cryptocurrency prices (Python)",
     ],
   },
   {
