@@ -6,10 +6,10 @@ import { ModelsObjectDetails } from "../models/ModelsObjectDetailsModel";
 import { Euler } from "three";
 
 interface ModelObjectDetails {
-  planeScale: number[];
-  planePosition: number[];
+  scale: number[];
+  position: number[];
   isRotating: boolean;
-  rotation?: Euler | undefined;
+  rotation: number[];
 }
 const Plane: React.FC<ModelObjectDetails> = ({ isRotating, ...props }) => {
   const ref = useRef<any>();
