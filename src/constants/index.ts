@@ -1,7 +1,9 @@
 import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
+  angular,
   car,
   contact,
+  csharp,
   css,
   estate,
   express,
@@ -10,12 +12,15 @@ import {
   html,
   javascript,
   linkedin,
+  microsoftsqlserver,
   mongodb,
   motion,
   mui,
   nextjs,
   nodejs,
+  postgresql,
   pricewise,
+  python,
   react,
   redux,
   sass,
@@ -28,14 +33,34 @@ import {
 
 export const skills = [
   {
+    imageUrl: html,
+    name: "HTML",
+    type: "Frontend",
+  },
+  {
     imageUrl: css,
     name: "CSS",
     type: "Frontend",
   },
   {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
+    imageUrl: react,
+    name: "React",
+    type: "Frontend",
+  },
+  {
+    imageUrl: javascript,
+    name: "JavaScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: tailwindcss,
+    name: "Tailwind CSS",
+    type: "Frontend",
   },
   {
     imageUrl: git,
@@ -48,34 +73,14 @@ export const skills = [
     type: "Version Control",
   },
   {
-    imageUrl: html,
-    name: "HTML",
-    type: "Frontend",
-  },
-  {
-    imageUrl: javascript,
-    name: "JavaScript",
-    type: "Frontend",
-  },
-  {
-    imageUrl: mongodb,
-    name: "MongoDB",
-    type: "Database",
-  },
-  {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
-  {
-    imageUrl: mui,
-    name: "Material-UI",
-    type: "Frontend",
-  },
-  {
     imageUrl: nextjs,
     name: "Next.js",
     type: "Frontend",
+  },
+  {
+    imageUrl: postgresql,
+    name: "postgresql",
+    type: "Backend",
   },
   {
     imageUrl: nodejs,
@@ -83,29 +88,19 @@ export const skills = [
     type: "Backend",
   },
   {
-    imageUrl: react,
-    name: "React",
-    type: "Frontend",
-  },
-  {
-    imageUrl: redux,
-    name: "Redux",
-    type: "State Management",
-  },
-  {
     imageUrl: sass,
     name: "Sass",
     type: "Frontend",
   },
   {
-    imageUrl: tailwindcss,
-    name: "Tailwind CSS",
-    type: "Frontend",
+    imageUrl: csharp,
+    name: "csharp",
+    type: "Backend",
   },
   {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
+    imageUrl: python,
+    name: "python",
+    type: "Backend",
   },
 ];
 
