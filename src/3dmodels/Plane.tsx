@@ -5,13 +5,13 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 import { ModelsObjectDetails } from "../models/ModelsObjectDetailsModel";
 import { Euler } from "three";
 
-interface Props {
+interface ModelObjectDetails {
   planeScale: number[];
   planePosition: number[];
   isRotating: boolean;
   rotation?: Euler | undefined;
 }
-const Plane: React.FC<Props> = ({ isRotating, ...props }) => {
+const Plane: React.FC<ModelObjectDetails> = ({ isRotating, ...props }) => {
   const ref = useRef<any>();
   const { scene, animations } = useGLTF(planeScene);
   const { actions } = useAnimations(animations, ref);
