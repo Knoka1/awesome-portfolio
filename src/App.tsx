@@ -6,8 +6,6 @@ import Navbar from "./components/Navbar";
 import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <main className="bg-slate-300/20 h-[100vh]">
       <Router>
