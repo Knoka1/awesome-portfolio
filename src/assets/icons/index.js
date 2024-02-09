@@ -12,6 +12,7 @@ import mui from "./mui.svg";
 import nextjs from "./nextjs.svg";
 import nodejs from "./nodejs.svg";
 import react from "./react.svg";
+import redeglobo from "./redeglobo.svg";
 import redux from "./redux.svg";
 import sass from "./sass.svg";
 import tailwindcss from "./tailwindcss.svg";
@@ -26,6 +27,7 @@ import estate from "./estate.svg";
 import pricewise from "./pricewise.svg";
 import python from "./python.svg";
 import snapgram from "./snapgram.svg";
+import scroll from "./scroll.png";
 import summiz from "./summiz.svg";
 import threads from "./threads.svg";
 import arrow from "./arrow.svg";
@@ -50,6 +52,7 @@ export {
   nodejs,
   postgresql,
   react,
+  redeglobo,
   redux,
   sass,
   tailwindcss,
@@ -62,6 +65,7 @@ export {
   pricewise,
   python,
   snapgram,
+  scroll,
   summiz,
   threads,
   arrow,
