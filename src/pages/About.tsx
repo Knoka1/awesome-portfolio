@@ -13,7 +13,7 @@ const About = () => {
     <section className="max-container">
       {/* <p>{t("description.part1")}</p> */}
       <h1 className="head-text">
-        {t("about.introduction")}
+        {t("about.introduction")}{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Alec
         </span>

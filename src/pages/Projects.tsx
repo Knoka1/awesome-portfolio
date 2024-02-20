@@ -3,23 +3,21 @@ import React from "react";
 import { projects } from "../constants";
 import { Link } from "react-router-dom";
 import { arrow } from "../assets/icons";
+import { useTranslation } from "react-i18next";
 import CTA from "../components/CTA";
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <section className="max-container">
       <h1 className="head-text">
-        My{" "}
+        {t("projects.my")}{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
-          Projects
+          {t("projects.projects")}
         </span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p className="text-slate-500 mt-2 leading-relaxed">
-          I've embarked on numerous projects throughout the years, but these are
-          the ones I hold closest to my heart. Many of them are open-source, so
-          if you come across something that piques your interest, feel free to
-          explore the codebase and contribute your ideas for further
-          enhancements. Your collaboration is highly valued!
+          {t("projects.introduction")}
         </p>
       </div>
       <div className="flex flex-wrap my-20 gap-16">
@@ -47,8 +45,7 @@ const Projects = () => {
                   rel="noonpener noreferrer"
                   className="font-semibold text-blue-600"
                 >
-                  {" "}
-                  Live Link
+                  {t("projects.link")}
                 </Link>
                 <img
                   src={arrow}
