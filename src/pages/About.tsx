@@ -8,24 +8,21 @@ import { useTranslation } from "react-i18next";
 import { skills, experiences } from "../constants";
 import CTA from "../components/CTA";
 const About = () => {
-  const { t } = useTranslation("ns1");
+  const { t } = useTranslation();
   return (
     <section className="max-container">
-      <p>{t("title")}</p>
+      {/* <p>{t("description.part1")}</p> */}
       <h1 className="head-text">
-        Hello, I'm{" "}
+        {t("about.introduction")}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Alec
         </span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
-          Software Engineer based in Brazil, specializing in both Front and Back
-          end development with a strong business background
-        </p>
+        <p>{t("about.subtitle")}</p>
       </div>
       <div className="py-10 flex flex-col">
-        <h3 className="subhead-text">My Skills</h3>
+        <h3 className="subhead-text">{t("about.skills")}</h3>
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill, index) => (
             <div className="block-container w-20 h-20" key={`skill-${index}`}>
@@ -43,12 +40,9 @@ const About = () => {
       </div>
 
       <div className="py-16">
-        <h3 className="subhead-text">Work Experience</h3>
+        <h3 className="subhead-text">{t("about.work")}</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p>
-            I've worked with all sorts of companiesm leveling up my skills and
-            teaming up with smart people. Here's the rundown:
-          </p>
+          <p>{t("about.rundown")}</p>
         </div>
         <div className="mt-12 flex">
           <VerticalTimeline>

@@ -1,5 +1,12 @@
 {
-  "title": "Welcome to react using react-i18next fully type-safe",
+  "about": {
+    "introduction": "Hello, I'm ",
+    "subtitle": "Software Engineer based in Brazil, specializing in both Front and Back-End development with a strong business background",
+    "skills": "My Skills",
+    "work": "Work Experience",
+    "rundown": "I've cultivated a diverse portfolio of experience by collaborating with a variety of companies, continuously honing my skills, and collaborating with talented individuals. Here's a summary of my journey:"
+  },
+
   "description": {
     "part1": "This is a simple example.",
     "part2": "😉"
