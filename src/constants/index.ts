@@ -33,6 +33,7 @@ import {
   threads,
   typescript,
 } from "../assets/icons";
+// import { useTranslation } from "react-i18next";
 
 export const skills = [
   {
@@ -106,7 +107,13 @@ export const skills = [
     type: "Backend",
   },
 ];
-
+// export const ExperienceTranslate = (number: number) => {
+//   const { t } = useTranslation();
+//   let translated = (experiences[number].title = t(
+//     `constants.experience${number}.title`
+//   ));
+//   return translated;
+// };
 export const experiences = [
   {
     title: "Freelance Developer and Influencer Marketing Manager",

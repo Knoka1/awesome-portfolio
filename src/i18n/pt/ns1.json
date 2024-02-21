@@ -1,28 +1,28 @@
 {
   "about": {
-    "introduction": "Hello, I'm",
-    "subtitle": "Software Engineer based in Brazil, specializing in both Front and Back-End development with a strong business background",
+    "introduction": "Olá, eu sou",
+    "subtitle": "Engenheiro de Software baseado no Brasil",
     "skills": "My Skills",
     "work": "Work Experience",
     "rundown": "I've cultivated a diverse portfolio of experience by collaborating with a variety of companies, continuously honing my skills, and collaborating with talented individuals. Here's a summary of my journey:"
   },
   "projects": {
-    "my": "My",
-    "projects": "Projects",
+    "my": "Meus",
+    "projects": "Projetos",
     "introduction": "Over the years, I've undertaken numerous projects, each holding a special place in my journey. Many of these endeavors are open-source, inviting you to delve into the codebase and share your insights for potential enhancements. Your collaboration is greatly appreciated and valued!",
     "link": "Live Link"
   },
   "constants": {
     "experience1": {
-      "title": "uuu"
+      "title": "Brasileiro traduzido"
     },
     "experience2": {
-      "title": "aaa"
+      "title": "Brasileiro traduzido 222"
     }
   },
   "components": {
     "homeinfo": {
-      "introduction": "BLA"
+      "introduction": "BLE"
     }
   }
 }
