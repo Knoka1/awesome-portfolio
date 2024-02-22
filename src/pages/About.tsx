@@ -8,10 +8,9 @@ import { useTranslation } from "react-i18next";
 import { skills, experiences } from "../constants";
 import CTA from "../components/CTA";
 const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section className="max-container">
-      {/* <p>{t("description.part1")}</p> */}
       <h1 className="head-text">
         {t("about.introduction")}{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
@@ -21,6 +20,9 @@ const About = () => {
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>{t("about.subtitle")}</p>
       </div>
+      <button onClick={() => i18n.changeLanguage("pt-BR")}>pt</button>
+      <br />
+      <button onClick={() => i18n.changeLanguage("en")}>en</button>
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">{t("about.skills")}</h3>
         <div className="mt-16 flex flex-wrap gap-12">

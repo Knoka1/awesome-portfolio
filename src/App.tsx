@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Home, About, Projects, Contact } from "./pages";
 import Navbar from "./components/Navbar";
 import "./index.css";
-import "./i18n/config";
+import "../public/locales/config";
 
 function App() {
   return (
