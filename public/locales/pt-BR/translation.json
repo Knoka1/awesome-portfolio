@@ -1,16 +1,16 @@
 {
   "about": {
     "introduction": "Olá, eu sou",
-    "subtitle": "Engenheiro de Software baseado no Brasil",
-    "skills": "My Skills",
-    "work": "Work Experience",
-    "rundown": "I've cultivated a diverse portfolio of experience by collaborating with a variety of companies, continuously honing my skills, and collaborating with talented individuals. Here's a summary of my journey:"
+    "subtitle": "Engenheiro de Software baseado no Brasil, especializado tanto em Front quanto Back-End com uma forte base de negócios",
+    "skills": "Minhas Skills",
+    "work": "Experiência",
+    "rundown": "Cultivei um portfólio diversificado de experiências colaborando com uma variedade de empresas, aprimorando continuamente minhas habilidades e trabalhando em conjunto com profissionais talentosos. Aqui está um resumo da minha jornada:"
   },
   "projects": {
     "my": "Meus",
     "projects": "Projetos",
-    "introduction": "Over the years, I've undertaken numerous projects, each holding a special place in my journey. Many of these endeavors are open-source, inviting you to delve into the codebase and share your insights for potential enhancements. Your collaboration is greatly appreciated and valued!",
-    "link": "Live Link"
+    "introduction": "Ao longo dos anos, tenho realizado inúmeros projetos, cada um ocupando um lugar especial em minha jornada. Muitas dessas iniciativas são de código aberto, convidando você a mergulhar no código-fonte e compartilhar suas ideias para possíveis melhorias. Sua colaboração é muito apreciada e valorizada!",
+    "link": "Link"
   },
   "constants": {
     "experience0": {
