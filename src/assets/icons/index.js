@@ -1,4 +1,5 @@
 import angular from "./angular.svg";
+import clerigos from "./clerigos.svg";
 import css from "./css.svg";
 import csharp from "./csharp.svg";
 import express from "./express.svg";
@@ -37,6 +38,7 @@ import soundoff from "./soundoff.png";
 
 export {
   angular,
+  clerigos,
   css,
   csharp,
   express,

@@ -3,6 +3,7 @@ import {
   angular,
   car,
   contact,
+  clerigos,
   csharp,
   css,
   estate,
@@ -166,6 +167,17 @@ export const experiences = [
     points: [
       "Presented a framework on how to deal with customers and the future of customer data using AI (Python)",
       "Showcased an MVP tailored for aggregating CS:GO match data and seamlessly integrating it into the broader esports landscape within the Globo ecosystem (Python)",
+    ],
+  },
+  {
+    title: "Co-Founder and Director",
+    index: 4,
+    company_name: "Clérigos PUC-Rio",
+    icon: clerigos,
+    iconBg: "#00774f",
+    date: "Aug 2019 - Jun 2022",
+    points: [
+      "Achieved over 5 titles in 3 different gaming categories involving a total of 100 students.",
     ],
   },
 ];
