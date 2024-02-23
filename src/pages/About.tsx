@@ -8,7 +8,8 @@ import { useTranslation } from "react-i18next";
 import { skills, experiences } from "../constants";
 import CTA from "../components/CTA";
 const About = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n, ready } = useTranslation();
+  if (!ready) return "loading translations...";
   return (
     <section className="max-container">
       <h1 className="head-text">
@@ -49,7 +50,6 @@ const About = () => {
         <div className="mt-12 flex">
           <VerticalTimeline>
             {experiences.map((experience, index) => (
-              //Could result in a big problem here. Company names won't necessarily be unique to be honest
               <VerticalTimelineElement
                 key={`experience.company_name${index}`}
                 date={experience.date}
@@ -72,7 +72,7 @@ const About = () => {
               >
                 <div>
                   <h3 className="text-black text-xl font-poppins font-semibold">
-                    {experience.title}
+                    {t(`constants.experience${index}.title`)}
                   </h3>
                   <p
                     className="text-black font-medium font-base"
@@ -87,7 +87,10 @@ const About = () => {
                       key={`experience-point-${index}`}
                       className="text-black-500/50 font-normal pl-1 text-sm"
                     >
-                      {point}
+                      {/* {point} */}
+                      {t(
+                        `constants.experience${experience.index}.point${index}`
+                      )}
                     </li>
                   ))}
                 </ul>

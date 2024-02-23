@@ -13,11 +13,30 @@
     "link": "Live Link"
   },
   "constants": {
+    "experience0": {
+      "title": "Founder and Data Analyst",
+      "point0": "Develop and maintain web applications and apps using React and React Native",
+      "point1": "Prospect and operate Influencer Marketing campaigns with top clients like GNT, Asics, Dafiti, Skechers and others",
+      "point2": "Develop APIs to fetch data and analyse Influencer's key metrics",
+      "point3": "Manage customer-brand relations"
+    },
     "experience1": {
-      "title": "uuu"
+      "title": "Full-Stack Software Engineer",
+      "point0": "Development of the investment platform and app Transfero Prime (React, .NET Core 5.0, C#)",
+      "point1": "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products",
+      "point2": "Development of the API and structure to process over $1 M a day in payments ( .NET and C#)",
+      "point3": "Creation of a bot responsible for keeping track of various cryptocurrency prices (Python)"
     },
     "experience2": {
-      "title": "aaa"
+      "title": "Data Analyst Intern",
+      "point0": "Structure data on key metrics on Globo's products using SQL, Google Big Query and Python for the shareholders",
+      "point1": "Study and propose new ideas to Globo using relevant behavioral and comparative data on all digital products (including G1, BBB, GE, GShow, Globoplay and more)",
+      "point2": "Create jobs and processes to automate data visualization and fetching"
+    },
+    "experience3": {
+      "title": "Innovation Intern",
+      "point0": "Presented a framework on how to deal with customers and the future of customer data using AI (Python)",
+      "point1": "Showcased an MVP tailored for aggregating CS:GO match data and seamlessly integrating it into the broader esports landscape within the Globo ecosystem (Python)"
     }
   },
   "components": {

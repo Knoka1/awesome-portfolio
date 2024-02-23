@@ -117,6 +117,7 @@ export const skills = [
 export const experiences = [
   {
     title: "Freelance Developer and Influencer Marketing Manager",
+    index: 0,
     company_name: "Scroll",
     icon: scroll,
     iconBg: "#000000",
@@ -130,6 +131,7 @@ export const experiences = [
   },
   {
     title: "Full-Stack Software Engineer",
+    index: 1,
     company_name: "Transfero",
     icon: transfero,
     iconBg: "#accbe1",
@@ -143,6 +145,7 @@ export const experiences = [
   },
   {
     title: "Data Analyst Intern",
+    index: 2,
     company_name: "Rede Globo",
     icon: redeglobo,
     iconBg: "#b7e4c7",
@@ -155,6 +158,7 @@ export const experiences = [
   },
   {
     title: "Innovation Intern",
+    index: 3,
     company_name: "Rede Globo",
     icon: redeglobo,
     iconBg: "#a2d2ff",
