@@ -166,7 +166,6 @@ export const experiences = [
     date: "Aug 2019 - Aug 2020",
     points: [
       "Presented a framework on how to deal with customers and the future of customer data using AI (Python)",
-      "Showcased an MVP tailored for aggregating CS:GO match data and seamlessly integrating it into the broader esports landscape within the Globo ecosystem (Python)",
     ],
   },
   {
