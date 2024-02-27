@@ -21,9 +21,7 @@ const About = () => {
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>{t("about.subtitle")}</p>
       </div>
-      <button onClick={() => i18n.changeLanguage("pt-BR")}>pt</button>
-      <br />
-      <button onClick={() => i18n.changeLanguage("en")}>en</button>
+
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">{t("about.skills")}</h3>
         <div className="mt-16 flex flex-wrap gap-12">
