@@ -43,8 +43,10 @@
     }
   },
   "components": {
-    "homeinfo": {
-      "introduction": "BLA"
+    "CTA": {
+      "introduction": "Have a project in mind?",
+      "finalization": "Let's build something together!",
+      "contact": "Contact"
     }
   }
 }

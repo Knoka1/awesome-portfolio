@@ -43,8 +43,10 @@
     }
   },
   "components": {
-    "homeinfo": {
-      "introduction": "BLE"
+    "CTA": {
+      "introduction": "Tem algum projeto em mente?",
+      "finalization": "Vamos construir algo juntos!",
+      "contact": "Contato"
     }
   }
 }
