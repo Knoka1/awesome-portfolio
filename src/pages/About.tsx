@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { skills, experiences } from "../constants";
 import CTA from "../components/CTA";
 const About = () => {
-  const { t, i18n, ready } = useTranslation();
+  const { t, ready } = useTranslation();
   if (!ready) return "loading translations...";
   return (
     <section className="max-container">
