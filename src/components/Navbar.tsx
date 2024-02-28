@@ -2,8 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   return (
     <header className="header">
       <NavLink
@@ -19,7 +21,7 @@ const Navbar = () => {
             isActive ? "text-blue-500" : "text-black"
           }
         >
-          About
+          {t("components.navbar.about")}
         </NavLink>
         <NavLink
           to="/projects"
@@ -27,7 +29,7 @@ const Navbar = () => {
             isActive ? "text-blue-500" : "text-black"
           }
         >
-          Projects
+          {t("components.navbar.projects")}
         </NavLink>
         <LanguageSelector />
       </nav>
