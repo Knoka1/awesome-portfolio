@@ -56,6 +56,21 @@
       "introduction": "Have a project in mind?",
       "finalization": "Let's build something together!",
       "contact": "Contact"
+    },
+    "homeinfo": {
+      "1": {
+        "introduction": "Hello, I'm",
+        "subtitle": "Software Engineer based in Brazil."
+      },
+      "2": {
+        "introduction": "I've had the opportunity to engage in diverse projects, enabling me to cultivate a wide range of skills."
+      },
+      "3": {
+        "introduction": "Interested in discussing a project or need more information? Feel free to reach out to me!"
+      },
+      "4": {
+        "introduction": "I've collaborated with numerous companies, acquiring a diverse set of skills along the way."
+      }
     }
   }
 }

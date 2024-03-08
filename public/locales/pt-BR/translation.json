@@ -56,6 +56,21 @@
       "introduction": "Tem algum projeto em mente?",
       "finalization": "Vamos construir algo juntos!",
       "contact": "Contato"
+    },
+    "homeinfo": {
+      "1": {
+        "introduction": "Olá, eu sou",
+        "subtitle": "Engenheiro de Software baseado no Brasil."
+      },
+      "2": {
+        "introduction": "Tive a oportunidade de participar em diversos projetos, o que me permitiu desenvolver uma ampla gama de habilidades."
+      },
+      "3": {
+        "introduction": "Interessado em discutir um projeto ou precisa de mais informações? Sinta-se à vontade para entrar em contato comigo!"
+      },
+      "4": {
+        "introduction": "Colaborei com inúmeras empresas, adquirindo uma variedade de habilidades ao longo do caminho."
+      }
     }
   }
 }
