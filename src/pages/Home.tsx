@@ -2,7 +2,7 @@ import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
 
-import Island from "../3dmodels/Island";
+import Room from "../3dmodels/Room";
 import Sky from "../3dmodels/Sky";
 import Bird from "../3dmodels/Bird";
 import Plane from "../3dmodels/Plane";
@@ -11,7 +11,7 @@ import HomeInfo from "../components/HomeInfo";
 const Home = () => {
   const [isRotating, setIsRotating] = useState<boolean>(false);
   const [currentStage, setCurrentStage] = useState<number | null>(null);
-  const adjustIslandForScreenSize = () => {
+  const ajustRoomForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
     let rotation = [0.1, 4.7, 0];
@@ -35,7 +35,7 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   };
   const [islandScale, islandPosition, islandRotation] =
-    adjustIslandForScreenSize();
+    ajustRoomForScreenSize();
   const [planeScale, planePosition, planeRotation] = adjustPlaneForScreenSize();
   return (
     <section className="w-full h-screen relative">
@@ -55,7 +55,7 @@ const Home = () => {
           <hemisphereLight color="#b1e1ff" groundColor="#000000" />
           <Bird />
           <Sky isRotating={isRotating} />
-          <Island
+          <Room
             position={islandPosition}
             scale={islandScale}
             rotation={islandRotation}
