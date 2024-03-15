@@ -1,6 +1,6 @@
 {
   "about": {
-    "introduction": "Olá, eu sou",
+    "introduction": "Olá, eu sou o",
     "subtitle": "Engenheiro de Software baseado no Brasil, especializado tanto em Front quanto Back-End com uma forte base de negócios.",
     "skills": "Minhas Skills",
     "work": "Experiência",
@@ -59,7 +59,7 @@
     },
     "homeinfo": {
       "1": {
-        "introduction": "Olá, eu sou",
+        "introduction": "Olá, eu sou o",
         "subtitle": "Engenheiro de Software baseado no Brasil."
       },
       "2": {
