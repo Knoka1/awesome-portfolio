@@ -10,25 +10,31 @@ import React, { useRef, useEffect, ChangeEvent } from "react";
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
-import { a } from "@react-spring/three";
 // @ts-ignore
-import islandScene from "../assets/3d/island.glb";
+import islandScene from "../assets/3d/lowpoly_room.glb";
 import { useFrame, useThree } from "@react-three/fiber";
 
 type GLTFResult = GLTF & {
   nodes: {
-    polySurface944_tree_body_0: THREE.Mesh;
-    polySurface945_tree1_0: THREE.Mesh;
-    polySurface946_tree2_0: THREE.Mesh;
-    polySurface947_tree1_0: THREE.Mesh;
-    polySurface948_tree_body_0: THREE.Mesh;
-    polySurface949_tree_body_0: THREE.Mesh;
-    pCube11_rocks1_0: THREE.Mesh;
+    Box010001_Color_0: THREE.Mesh;
+    Box010001_mirror_0: THREE.Mesh;
+    Box010001_metal_0: THREE.Mesh;
+    Box010001_metal001_0: THREE.Mesh;
+    Box010001_emission_window_0: THREE.Mesh;
+    Box010001_emission_lamp_0: THREE.Mesh;
+    Box010001_glass_0: THREE.Mesh;
   };
   materials: {
-    PaletteMaterial001: THREE.MeshStandardMaterial;
+    Color: THREE.MeshStandardMaterial;
+    mirror: THREE.MeshStandardMaterial;
+    metal: THREE.MeshStandardMaterial;
+    ["metal.001"]: THREE.MeshStandardMaterial;
+    emission_window: THREE.MeshStandardMaterial;
+    emission_lamp: THREE.MeshStandardMaterial;
+    glass: THREE.MeshStandardMaterial;
   };
 };
+
 interface ModelObjectDetails {
   isRotating: boolean;
   setIsRotating: React.Dispatch<React.SetStateAction<boolean>>;
@@ -200,36 +206,38 @@ const Island: React.FC<ModelObjectDetails> = ({
   });
 
   return (
-    <a.group ref={islandRef} {...props}>
-      <mesh
-        geometry={nodes.polySurface944_tree_body_0.geometry}
-        material={materials.PaletteMaterial001}
-      />
-      <mesh
-        geometry={nodes.polySurface945_tree1_0.geometry}
-        material={materials.PaletteMaterial001}
-      />
-      <mesh
-        geometry={nodes.polySurface946_tree2_0.geometry}
-        material={materials.PaletteMaterial001}
-      />
-      <mesh
-        geometry={nodes.polySurface947_tree1_0.geometry}
-        material={materials.PaletteMaterial001}
-      />
-      <mesh
-        geometry={nodes.polySurface948_tree_body_0.geometry}
-        material={materials.PaletteMaterial001}
-      />
-      <mesh
-        geometry={nodes.polySurface949_tree_body_0.geometry}
-        material={materials.PaletteMaterial001}
-      />
-      <mesh
-        geometry={nodes.pCube11_rocks1_0.geometry}
-        material={materials.PaletteMaterial001}
-      />
-    </a.group>
+    <group {...props} ref={islandRef} dispose={null}>
+      <group rotation={[-Math.PI / 2, 0, 3.5]} scale={2.5}>
+        <mesh
+          geometry={nodes.Box010001_Color_0.geometry}
+          material={materials.Color}
+        />
+        <mesh
+          geometry={nodes.Box010001_mirror_0.geometry}
+          material={materials.mirror}
+        />
+        <mesh
+          geometry={nodes.Box010001_metal_0.geometry}
+          material={materials.metal}
+        />
+        <mesh
+          geometry={nodes.Box010001_metal001_0.geometry}
+          material={materials["metal.001"]}
+        />
+        <mesh
+          geometry={nodes.Box010001_emission_window_0.geometry}
+          material={materials.emission_window}
+        />
+        <mesh
+          geometry={nodes.Box010001_emission_lamp_0.geometry}
+          material={materials.emission_lamp}
+        />
+        <mesh
+          geometry={nodes.Box010001_glass_0.geometry}
+          material={materials.glass}
+        />
+      </group>
+    </group>
   );
 };
 
