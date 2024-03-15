@@ -12,7 +12,7 @@
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 // @ts-ignore
-import scene from "../assets/3d/fox.glb";
+import scene from "../assets/3d/bullpuppy.glb";
 import { GLTF } from "three-stdlib";
 // 3D Model from: https://sketchfab.com/3d-models/fox-f372c04de44640fbb6a4f9e4e5845c78
 interface ModelObjectDetails {
@@ -24,14 +24,10 @@ interface ModelObjectDetails {
 type GLTFResult = GLTF & {
   nodes: {
     Object_7: THREE.SkinnedMesh;
-    Object_8: THREE.SkinnedMesh;
-    Object_9: THREE.SkinnedMesh;
-    Object_10: THREE.SkinnedMesh;
-    Object_11: THREE.SkinnedMesh;
     GLTF_created_0_rootJoint: THREE.Bone;
   };
   materials: {
-    PaletteMaterial001: THREE.MeshStandardMaterial;
+    mat_0: THREE.MeshPhysicalMaterial;
   };
 };
 const Fox: React.FC<ModelObjectDetails> = ({ currentAnimation, ...props }) => {
@@ -49,39 +45,28 @@ const Fox: React.FC<ModelObjectDetails> = ({ currentAnimation, ...props }) => {
   }, [actions, currentAnimation]);
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} scale={6}>
       <group name="Sketchfab_Scene">
-        <primitive object={nodes.GLTF_created_0_rootJoint} />
-        <skinnedMesh
-          name="Object_7"
-          geometry={nodes.Object_7.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_7.skeleton}
-        />
-        <skinnedMesh
-          name="Object_8"
-          geometry={nodes.Object_8.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_8.skeleton}
-        />
-        <skinnedMesh
-          name="Object_9"
-          geometry={nodes.Object_9.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_9.skeleton}
-        />
-        <skinnedMesh
-          name="Object_10"
-          geometry={nodes.Object_10.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_10.skeleton}
-        />
-        <skinnedMesh
-          name="Object_11"
-          geometry={nodes.Object_11.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_11.skeleton}
-        />
+        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0.75]}>
+          <group name="root">
+            <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
+              <group name="skeleton_#0_35">
+                <group name="GLTF_created_0">
+                  <primitive object={nodes.GLTF_created_0_rootJoint} />
+                  <skinnedMesh
+                    name="Object_7"
+                    geometry={nodes.Object_7.geometry}
+                    material={materials.mat_0}
+                    skeleton={nodes.Object_7.skeleton}
+                    morphTargetDictionary={nodes.Object_7.morphTargetDictionary}
+                    morphTargetInfluences={nodes.Object_7.morphTargetInfluences}
+                  />
+                  <group name="Object_0_34" />
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
       </group>
     </group>
   );

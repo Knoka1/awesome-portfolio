@@ -18,7 +18,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    setCurrentAnimation("hit");
+    setCurrentAnimation("Animation");
 
     emailjs
       .send(
@@ -59,7 +59,7 @@ const Contact = () => {
       });
   };
   const handleFocus = () => {
-    setCurrentAnimation("walk");
+    setCurrentAnimation("Animation");
   };
   const handleBlur = () => {
     setCurrentAnimation("idle");
@@ -128,15 +128,17 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div className="lg:w-1/2 w-full lg:j-auto md:h-[550px] h-[350px]">
-        <Canvas camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}>
+      <div className="lg:w-1/2 lg:mt-10 w-full lg:j-auto  md:h-[550px] h-[350px]">
+        <Canvas
+          camera={{ position: [0, 1.6, 5], fov: 75, near: 0.1, far: 1000 }}
+        >
           <directionalLight intensity={2.5} position={[0, 0, 1]} />
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
             <Fox
-              position={[0.5, 0.35, 0]}
+              position={[0.25, 0.35, 0.5]}
               rotation={[12.6, -0.6, 0]}
-              scale={[0.5, 0.5, 0.5]}
+              scale={[0.8, 0.8, 0.8]}
               currentAnimation={currentAnimation}
             />
           </Suspense>
