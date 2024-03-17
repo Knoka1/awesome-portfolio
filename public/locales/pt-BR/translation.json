@@ -13,6 +13,13 @@
     "link": "Link",
     "tba": "À ser adicionado"
   },
+  "contact": {
+    "title": "Entre em Contato",
+    "name": "Nome",
+    "message": "Sua Mensagem",
+    "sending": "Enviando Mensagem...",
+    "submit": "Enviar"
+  },
   "constants": {
     "experience0": {
       "title": "Fundador e Analista de Dados",

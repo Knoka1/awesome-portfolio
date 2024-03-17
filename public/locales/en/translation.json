@@ -13,6 +13,13 @@
     "link": "Live Link",
     "tba": "To be Added"
   },
+  "contact": {
+    "title": "Get In Touch",
+    "name": "Name",
+    "message": "Your Message",
+    "sending": "Sending Message...",
+    "submit": "Submit"
+  },
   "constants": {
     "experience0": {
       "title": "Founder and Data Analyst",
