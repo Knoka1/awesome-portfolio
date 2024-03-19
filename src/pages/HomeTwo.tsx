@@ -21,33 +21,26 @@ const HomeTwo = () => {
       </div>
 
       <div className="flex justify-center overflow-hidden h-8 sm:h-12  ">
-        {" "}
         <h1 className="sm:text-5xl text-3xl font-semibold font-poppins tracking-tighter">
-          {"I'm a"}{" "}
+          {t("home.me")}
         </h1>
         <h1 className="sm:text-5xl text-3xl font-semibold font-poppins tracking-tighter">
-          <ul className="content_container_list text-center pl-[1vw] ">
-            <li className="content_container_list_item yellow-gradient_text ">
-              Data Analyst
+          <ul className="content_container_list text-left pl-[1vw] ">
+            <li className="content_container_list_item yellow-gradient_text pl-2">
+              {t("home.data")}
             </li>
-            <li className="content_container_list_item orange-gradient_text  ">
-              Developer
+            <li className="content_container_list_item orange-gradient_text pl-2">
+              {t("home.developer")}
             </li>
             <li className="content_container_list_item red-gradient_text pl-2 ">
-              Entreprenuer
+              {t("home.entreprenuer")}
             </li>
-            <li className="content_container_list_item">Learner</li>
+            <li className="content_container_list_item blue-gradient_text pl-2">
+              {t("home.learner")}
+            </li>
           </ul>
         </h1>
-        {/* <span className="orange-gradient_text_animated font-semibold drop-shadow">
-              Programmer
-            </span> */}
       </div>
-
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        {/* <p>{t("about.subtitle")}</p> */}
-      </div>
-
       <div className="py-10 flex flex-col">
         <div className="mt-16 flex flex-wrap gap-12 justify-center">
           {skills.map((skill, index) => (
@@ -63,6 +56,13 @@ const HomeTwo = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-5 flex flex-col text-slate-500">
+        <p>
+          "It doesn’t matter how many times you fail. You only have to be right
+          once and then everyone can tell you that you are an overnight
+          success." <br /> - Mark Cuban
+        </p>
       </div>
     </section>
   );

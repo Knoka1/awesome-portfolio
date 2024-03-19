@@ -128,6 +128,9 @@ body:has(.card[data-color="green"]:hover) {
   .yellow-gradient_text {
     @apply bg-gradient-to-r from-[#fff34e] to-[#c9c400] bg-clip-text text-transparent;
   }
+  .altorange-gradient_text {
+    @apply bg-gradient-to-r from-[#ff8737] to-[#c95000] bg-clip-text text-transparent;
+  }
 
   .input {
     @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;

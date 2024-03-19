@@ -1,4 +1,11 @@
 {
+  "home": {
+    "me": "I am a",
+    "data": "Data Analyst",
+    "developer": "Developer",
+    "entreprenuer": "Entreprenuer",
+    "learner": "Learner"
+  },
   "about": {
     "introduction": "Hello, I'm",
     "subtitle": "Software Engineer based in Brazil, specializing in both Front and Back-End development with a strong business background.",

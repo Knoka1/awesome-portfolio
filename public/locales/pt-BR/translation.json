@@ -1,4 +1,11 @@
 {
+  "home": {
+    "me": "Eu sou",
+    "data": "Data Analyst",
+    "developer": "Desenvolvedor",
+    "entreprenuer": "Empreendedor",
+    "learner": "Aprendiz"
+  },
   "about": {
     "introduction": "Olá, eu sou o",
     "subtitle": "Engenheiro de Software baseado no Brasil, especializado tanto em Front quanto Back-End com uma forte base de negócios.",
