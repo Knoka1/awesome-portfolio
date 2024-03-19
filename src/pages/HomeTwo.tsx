@@ -9,9 +9,9 @@ const HomeTwo = () => {
     <section className="max-container">
       <div className="flex justify-center">
         {" "}
-        <h1 className="sm:text-6xl text-4xl font-semibold sm:leading-snug font-poppins tracking-tighter">
+        <h1 className="sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins tracking-tighter">
           {t("about.introduction")}{" "}
-          <span className="blue-gradient_text_animated font-semibold drop-shadow">
+          <span className=" font-semibold drop-shadow blue-gradient_text">
             Alec
           </span>
           <span role="img" aria-label="waving hand">
@@ -19,17 +19,29 @@ const HomeTwo = () => {
           </span>
         </h1>
       </div>
-      <div className="flex justify-center">
+
+      <div className="flex justify-center overflow-hidden h-8 sm:h-12  ">
         {" "}
-        <h1 className="sm:text-6xl text-4xl font-semibold sm:leading-snug font-poppins tracking-tighter">
+        <h1 className="sm:text-5xl text-3xl font-semibold font-poppins tracking-tighter">
           {"I'm a"}{" "}
-          <span className="orange-gradient_text_animated font-semibold drop-shadow">
-            Programmer
-          </span>
-          <span role="img" aria-label="laptop">
-            💻
-          </span>
         </h1>
+        <h1 className="sm:text-5xl text-3xl font-semibold font-poppins tracking-tighter">
+          <ul className="content_container_list text-center pl-[1vw] ">
+            <li className="content_container_list_item yellow-gradient_text ">
+              Data Analyst
+            </li>
+            <li className="content_container_list_item orange-gradient_text  ">
+              Developer
+            </li>
+            <li className="content_container_list_item red-gradient_text pl-2 ">
+              Entreprenuer
+            </li>
+            <li className="content_container_list_item">Learner</li>
+          </ul>
+        </h1>
+        {/* <span className="orange-gradient_text_animated font-semibold drop-shadow">
+              Programmer
+            </span> */}
       </div>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
