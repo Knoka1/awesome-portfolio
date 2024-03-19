@@ -20,7 +20,17 @@ body:has(.card[data-color="blue"]:hover) {
 body:has(.card[data-color="green"]:hover) {
   background-color: rgb(var(--green-rgb) / 25%);
 }
-
+@keyframes colorCycle {
+  0%,
+  55% {
+    filter: brightness(0);
+  }
+  11%,
+  33%,
+  77% {
+    filter: none;
+  }
+}
 @layer utilities {
   .max-container {
     @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
@@ -38,8 +48,19 @@ body:has(.card[data-color="green"]:hover) {
     @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
   }
 
-  .orange-gradient_text {
+  .blue-gradient_text_animated {
+    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+    animation: colorCycle 10s ease-in-out infinite;
+  }
+  .orange-gradient_text_animated {
     @apply bg-gradient-to-r from-[#f0b771] to-[#e76b00] bg-clip-text text-transparent;
+    animation: colorCycle 10s ease-in-out infinite;
+    animation-delay: 3.33s;
+  }
+  .red-gradient_text_animated {
+    @apply bg-gradient-to-r from-[#ff0000] to-[#912121] bg-clip-text text-transparent;
+    animation: colorCycle 10s ease-in-out infinite;
+    animation-delay: 6.66s;
   }
 
   .input {

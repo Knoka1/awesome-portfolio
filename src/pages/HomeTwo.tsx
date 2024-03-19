@@ -11,7 +11,7 @@ const HomeTwo = () => {
         {" "}
         <h1 className="sm:text-6xl text-4xl font-semibold sm:leading-snug font-poppins tracking-tighter">
           {t("about.introduction")}{" "}
-          <span className="blue-gradient_text font-semibold drop-shadow">
+          <span className="blue-gradient_text_animated font-semibold drop-shadow">
             Alec
           </span>
           <span role="img" aria-label="waving hand">
@@ -23,10 +23,12 @@ const HomeTwo = () => {
         {" "}
         <h1 className="sm:text-6xl text-4xl font-semibold sm:leading-snug font-poppins tracking-tighter">
           {"I'm a"}{" "}
-          <span className="orange-gradient_text font-semibold drop-shadow">
-            Developer
+          <span className="orange-gradient_text_animated font-semibold drop-shadow">
+            Programmer
           </span>
-          💻
+          <span role="img" aria-label="laptop">
+            💻
+          </span>
         </h1>
       </div>
 
@@ -35,8 +37,7 @@ const HomeTwo = () => {
       </div>
 
       <div className="py-10 flex flex-col">
-        <h3 className="subhead-text">{t("about.skills")}</h3>
-        <div className="mt-16 flex flex-wrap gap-12">
+        <div className="mt-16 flex flex-wrap gap-12 justify-center">
           {skills.map((skill, index) => (
             <div className="block-container w-20 h-20" key={`skill-${index}`}>
               <div className="btn-back rounded-xl " />
@@ -51,9 +52,6 @@ const HomeTwo = () => {
           ))}
         </div>
       </div>
-
-      <hr className="border-slate-200" />
-      <CTA />
     </section>
   );
 };
