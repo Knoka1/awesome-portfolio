@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import { Home, About, Projects, Contact } from "./pages";
+import { HomeTwo, About, Projects, Contact } from "./pages";
 import Navbar from "./components/Navbar";
 import "./index.css";
 import "../public/locales/config";
@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeTwo />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
