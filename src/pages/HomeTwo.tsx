@@ -20,19 +20,19 @@ const HomeTwo = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center overflow-hidden h-8 sm:h-12  ">
+      <div className="flex justify-center overflow-hidden h-8 sm:h-12">
         <h1 className="sm:text-5xl text-3xl font-semibold font-poppins tracking-tighter">
           {t("home.me")}
         </h1>
         <h1 className="sm:text-5xl text-3xl font-semibold font-poppins tracking-tighter">
-          <ul className="content_container_list text-left pl-[1vw] ">
+          <ul className="content_container_list text-left pl-[0.5vw] ">
             <li className="content_container_list_item yellow-gradient_text pl-2">
               {t("home.data")}
             </li>
             <li className="content_container_list_item orange-gradient_text pl-2">
               {t("home.developer")}
             </li>
-            <li className="content_container_list_item red-gradient_text pl-2 ">
+            <li className="content_container_list_item red-gradient_text  pl-2">
               {t("home.entreprenuer")}
             </li>
             <li className="content_container_list_item blue-gradient_text pl-2">

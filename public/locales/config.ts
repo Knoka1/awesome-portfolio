@@ -1,6 +1,5 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import translation from "./en/translation.json";
 import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 // export const defaultNS = "translation";
