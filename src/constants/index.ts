@@ -84,7 +84,7 @@ export const skills = [
   },
   {
     imageUrl: postgresql,
-    name: "postgresql",
+    name: "PostgreSQL",
     type: "Backend",
   },
   {
@@ -99,22 +99,16 @@ export const skills = [
   },
   {
     imageUrl: csharp,
-    name: "csharp",
+    name: "CSharp",
     type: "Backend",
   },
   {
     imageUrl: python,
-    name: "python",
+    name: "Python",
     type: "Backend",
   },
 ];
-// export const ExperienceTranslate = (number: number) => {
-//   const { t } = useTranslation();
-//   let translated = (experiences[number].title = t(
-//     `constants.experience${number}.title`
-//   ));
-//   return translated;
-// };
+
 export const experiences = [
   {
     title: "Freelance Developer and Influencer Marketing Manager",
