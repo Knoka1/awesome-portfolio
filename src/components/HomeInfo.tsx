@@ -8,6 +8,9 @@ interface Props {
   link: string;
   btnText: string;
 }
+interface IHomeInfo {
+  currentStage: number;
+}
 const InfoBox: React.FC<Props> = ({ text, link, btnText }) => (
   <div className="info-box">
     <p className="font-medium sm:text-xl text-center">{text}</p>
@@ -18,7 +21,7 @@ const InfoBox: React.FC<Props> = ({ text, link, btnText }) => (
   </div>
 );
 
-const HomeInfo = ({ currentStage }) => {
+const HomeInfo: React.FC<IHomeInfo> = ({ currentStage }) => {
   const { t } = useTranslation();
   const renderContent: any = {
     1: (
