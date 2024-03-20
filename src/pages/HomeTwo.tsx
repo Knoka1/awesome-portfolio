@@ -58,14 +58,16 @@ const HomeTwo = () => {
           ))}
         </div>
       </div>
-      <hr />
-      <div className="mt-5 flex flex-col mt-10 justify-end text-slate-400">
+
+      <div className="mb-10 flex flex-col mt-10 justify-end text-slate-400">
         <p>
           "It doesn’t matter how many times you fail. You only have to be right
           once and then everyone can tell you that you are an overnight
           success." <br /> - Mark Cuban
         </p>
       </div>
+      <hr />
+      <CTA />
     </section>
   );
 };
