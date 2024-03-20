@@ -46,8 +46,7 @@ const HomeTwo = () => {
           {socialLinks.map((social, index) => (
             <a href={social.link} target="_blank">
               <div className="block-container w-20 h-20" key={`skill-${index}`}>
-                <div className="btn-back rounded-xl " />
-                <div className="btn-front rounded-xl flex justify-center items-center">
+                <div className="btn-front rounded-xl flex justify-center items-center hover:bg-gray-300">
                   <img
                     src={social.iconUrl}
                     alt={social.name}
