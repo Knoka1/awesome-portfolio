@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import { HomeTwo, About, Projects, Contact } from "./pages";
+import { HomeTwo, About, Projects, Contact, Info } from "./pages";
 import Navbar from "./components/Navbar";
 import "./index.css";
 import "../public/locales/config";
@@ -16,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/info" element={<Info />} />
         </Routes>
       </Router>
     </main>

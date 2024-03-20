@@ -59,7 +59,7 @@ const HomeTwo = () => {
         </div>
       </div>
 
-      <div className="mb-10 flex flex-col mt-10 justify-end text-slate-400">
+      <div className="mb-12 flex flex-col mt-12 justify-end text-slate-400">
         <p>
           "It doesn’t matter how many times you fail. You only have to be right
           once and then everyone can tell you that you are an overnight
@@ -68,6 +68,13 @@ const HomeTwo = () => {
       </div>
       <hr />
       <CTA />
+      <div className=" flex flex-col mt-12 text-slate-300">
+        <hr />
+        <a href="/info" className="mt-12">
+          <p>Extra Info</p>
+        </a>
+        <p>© Copyright 2024 Alec</p>
+      </div>
     </section>
   );
 };
