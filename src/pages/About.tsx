@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { useTranslation } from "react-i18next";
 import { skills, experiences } from "../constants";
 import CTA from "../components/CTA";
+import Popover from "../components/Popover";
 const About = () => {
   const { t, ready } = useTranslation();
   if (!ready) return "loading translations...";
@@ -26,7 +27,16 @@ const About = () => {
         <h3 className="subhead-text">{t("about.skills")}</h3>
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill, index) => (
-            <div className="block-container w-20 h-20" key={`skill-${index}`}>
+            <div
+              className="block-container w-20 h-20 group"
+              key={`skill-${index}`}
+            >
+              <Popover
+                type="info"
+                text={`${skill.name}`}
+                className="hidden group-hover:block bottom-20"
+              />
+
               <div className="btn-back rounded-xl " />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
