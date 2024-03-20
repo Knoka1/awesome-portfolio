@@ -1,4 +1,4 @@
-import React, { Suspense, useRef, useState } from "react";
+import { Suspense, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
@@ -15,10 +15,10 @@ const Contact = () => {
   const { alert, showAlert, hideAlert } = useAlert();
   const { t } = useTranslation();
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     setIsLoading(true);
     setCurrentAnimation("Animation");

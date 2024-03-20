@@ -1,7 +1,6 @@
 import "react-vertical-timeline-component/style.min.css";
 import { useTranslation } from "react-i18next";
 import { socialLinks } from "../constants";
-import CTA from "../components/CTA";
 const HomeTwo = () => {
   const { t, ready } = useTranslation();
   if (!ready) return "loading translations...";

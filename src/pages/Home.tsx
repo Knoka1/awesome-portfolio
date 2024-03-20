@@ -4,8 +4,8 @@ import Loader from "../components/Loader";
 
 import Room from "../3dmodels/Room";
 import Sky from "../3dmodels/Sky";
-import Bird from "../3dmodels/Bird";
-import Plane from "../3dmodels/Plane";
+// import Bird from "../3dmodels/Bird";
+// import Plane from "../3dmodels/Plane";
 import HomeInfo from "../components/HomeInfo";
 
 const Home = () => {
@@ -53,7 +53,7 @@ const Home = () => {
           <directionalLight position={[1, 1, 1]} intensity={1.2} />
           <ambientLight intensity={0.5} />
           <hemisphereLight color="#b1e1ff" groundColor="#000000" />
-          <Bird />
+          {/* <Bird /> */}
           <Sky isRotating={isRotating} />
           <Room
             position={islandPosition}
@@ -63,12 +63,12 @@ const Home = () => {
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
           />
-          <Plane
+          {/* <Plane
             scale={planeScale}
             position={planePosition}
             isRotating={isRotating}
             rotation={planeRotation}
-          />
+          /> */}
         </Suspense>
       </Canvas>
     </section>

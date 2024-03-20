@@ -3,6 +3,7 @@ import { useState } from "react";
 export interface IAlert {
   text: string;
   type: string;
+  show: boolean;
 }
 const useAlert = () => {
   const [alert, setAlert] = useState({ show: false, text: "", type: "danger" });
