@@ -187,16 +187,19 @@ export const socialLinks = [
   // },
   {
     name: "GitHub",
+    index: 1,
     iconUrl: github,
     link: "https://github.com/Knoka1",
   },
   {
     name: "LinkedIn",
+    index: 2,
     iconUrl: linkedin,
     link: "https://www.linkedin.com/in/alecdocouto/",
   },
   {
     name: "CV",
+    index: 3,
     iconUrl: cvicon,
     link: cv2024,
   },

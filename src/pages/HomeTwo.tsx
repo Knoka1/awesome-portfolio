@@ -43,8 +43,11 @@ const HomeTwo = () => {
       <div className="py-10 flex flex-col">
         <div className="mt-16 flex flex-wrap gap-12 justify-center">
           {socialLinks.map((social, index) => (
-            <a href={social.link} target="_blank">
-              <div className="block-container w-20 h-20" key={`skill-${index}`}>
+            <a href={social.link} target="_blank" key={`social-${index}`}>
+              <div
+                className="block-container w-20 h-20"
+                key={`social-${index}`}
+              >
                 <div className="btn-front rounded-xl flex justify-center items-center hover:bg-gray-300">
                   <img
                     src={social.iconUrl}
