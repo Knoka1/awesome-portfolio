@@ -277,6 +277,7 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .content_container_list {
+  user-select: none;
   -webkit-animation-name: change;
   -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
