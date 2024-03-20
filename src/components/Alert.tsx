@@ -1,8 +1,12 @@
 import React from "react";
 
-const Alert = ({ type, text }) => {
+export interface Props {
+  type: string;
+  text: string;
+}
+const Alert: React.FC<Props> = ({ type, text }) => {
   return (
-    <div className="absolute top-10 left-0 right-0 flex justify-center items-center">
+    <div className="absolute top-10 left-0 right-0 flex justify-center items-center z-10">
       <div
         className={`${
           type === "danger" ? "bg-red-800" : "bg-blue-800"
