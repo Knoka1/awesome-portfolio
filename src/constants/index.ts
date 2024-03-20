@@ -1,4 +1,3 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
   angular,
   car,
@@ -6,6 +5,7 @@ import {
   clerigos,
   csharp,
   css,
+  cvicon,
   estate,
   express,
   git,
@@ -24,7 +24,6 @@ import {
   python,
   react,
   redeglobo,
-  redux,
   sass,
   snapgram,
   scroll,
@@ -107,6 +106,11 @@ export const skills = [
     name: "Python",
     type: "Backend",
   },
+  {
+    imageUrl: microsoftsqlserver,
+    name: "SQLServer",
+    type: "Backend",
+  },
 ];
 
 export const experiences = [
@@ -176,11 +180,11 @@ export const experiences = [
 ];
 
 export const socialLinks = [
-  {
-    name: "Contact",
-    iconUrl: contact,
-    link: "/contact",
-  },
+  // {
+  //   name: "Contact",
+  //   iconUrl: contact,
+  //   link: "/contact",
+  // },
   {
     name: "GitHub",
     iconUrl: github,
@@ -189,6 +193,11 @@ export const socialLinks = [
   {
     name: "LinkedIn",
     iconUrl: linkedin,
+    link: "https://www.linkedin.com/in/alecdocouto/",
+  },
+  {
+    name: "CV",
+    iconUrl: cvicon,
     link: "https://www.linkedin.com/in/alecdocouto/",
   },
 ];

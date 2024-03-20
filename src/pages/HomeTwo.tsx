@@ -1,6 +1,6 @@
 import "react-vertical-timeline-component/style.min.css";
 import { useTranslation } from "react-i18next";
-import { skills, experiences } from "../constants";
+import { socialLinks } from "../constants";
 import CTA from "../components/CTA";
 const HomeTwo = () => {
   const { t, ready } = useTranslation();
@@ -43,21 +43,24 @@ const HomeTwo = () => {
       </div>
       <div className="py-10 flex flex-col">
         <div className="mt-16 flex flex-wrap gap-12 justify-center">
-          {skills.map((skill, index) => (
-            <div className="block-container w-20 h-20" key={`skill-${index}`}>
-              <div className="btn-back rounded-xl " />
-              <div className="btn-front rounded-xl flex justify-center items-center">
-                <img
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className="w-1/2 h-1/2 object-contain"
-                />
+          {socialLinks.map((social, index) => (
+            <a href={social.link} target="_blank">
+              <div className="block-container w-20 h-20" key={`skill-${index}`}>
+                <div className="btn-back rounded-xl " />
+                <div className="btn-front rounded-xl flex justify-center items-center">
+                  <img
+                    src={social.iconUrl}
+                    alt={social.name}
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
-      <div className="mt-5 flex flex-col text-slate-500">
+      <hr />
+      <div className="mt-5 flex flex-col mt-10 justify-end text-slate-400">
         <p>
           "It doesn’t matter how many times you fail. You only have to be right
           once and then everyone can tell you that you are an overnight
