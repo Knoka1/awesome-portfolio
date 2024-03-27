@@ -2,11 +2,12 @@ import { Suspense, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
-import Fox from "../3dmodels/Fox";
+import Pug from "../3dmodels/Pug";
 import Loader from "../components/Loader";
 import useAlert from "../hooks/useAlert";
 
 import Alert from "../components/Alert";
+import { Euler, Vector3 } from "three";
 const Contact = () => {
   const formRef = useRef<any>(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -138,10 +139,10 @@ const Contact = () => {
           <directionalLight intensity={2.5} position={[0, 0, 1]} />
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
-            <Fox
-              position={[0.25, 0.35, 0.5]}
-              rotation={[12.6, -0.6, 0]}
-              scale={[0.8, 0.8, 0.8]}
+            <Pug
+              position={new Vector3(0.25, -0.25, 1)}
+              rotation={new Euler(12.6, -0.6, 0)}
+              scale={new Vector3(6, 6, 6)}
               currentAnimation={currentAnimation}
             />
           </Suspense>

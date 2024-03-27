@@ -14,12 +14,13 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 // @ts-ignore
 import scene from "../assets/3d/bullpuppy.glb";
 import { GLTF } from "three-stdlib";
+import { Euler, Vector3 } from "three";
 // 3D Model from: https://sketchfab.com/3d-models/fox-f372c04de44640fbb6a4f9e4e5845c78
 interface ModelObjectDetails {
   currentAnimation: string;
-  position: number[];
-  scale: number[];
-  rotation: number[];
+  position: Vector3;
+  scale: Vector3;
+  rotation: Euler;
 }
 type GLTFResult = GLTF & {
   nodes: {
@@ -30,7 +31,11 @@ type GLTFResult = GLTF & {
     mat_0: THREE.MeshPhysicalMaterial;
   };
 };
-const Fox: React.FC<ModelObjectDetails> = ({ currentAnimation, ...props }) => {
+const Pug: React.FC<ModelObjectDetails> = ({
+  currentAnimation,
+  scale,
+  ...props
+}) => {
   const group = useRef<any>();
   const { nodes, materials, animations } = useGLTF(scene) as GLTFResult;
   const { actions } = useAnimations(animations, group);
@@ -45,7 +50,7 @@ const Fox: React.FC<ModelObjectDetails> = ({ currentAnimation, ...props }) => {
   }, [actions, currentAnimation]);
 
   return (
-    <group ref={group} {...props} scale={6}>
+    <group ref={group} {...props} scale={scale}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0.75]}>
           <group name="root">
