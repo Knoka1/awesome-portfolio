@@ -77,4 +77,4 @@ const Pug: React.FC<ModelObjectDetails> = ({
   );
 };
 
-export default Fox;
+export default Pug;
