@@ -9,11 +9,11 @@ const Navbar = () => {
     <header className="header">
       <NavLink
         to="/"
-        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+        className="md:w-10 md:h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md sm:w-8 sm:h-8"
       >
         <p className="blue-gradient_text">AC</p>
       </NavLink>
-      <nav className="flex text-lg gap-7 font-medium">
+      <nav className="flex md:text-lg gap-7 md:font-medium sm:text-sm">
         <NavLink
           to="/about"
           className={({ isActive }) =>
