@@ -212,7 +212,8 @@ export const projects = [
     name: "Full Stack Threads Clone",
     description:
       'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/Knoka1/awesome-portfolio",
+    link: "",
+    githubLink: "https://github.com/Knoka1/awesome-portfolio",
   },
   // {
   //   iconUrl: threads,

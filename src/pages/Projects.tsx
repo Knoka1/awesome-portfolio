@@ -1,6 +1,6 @@
 import { projects } from "../constants";
 import { Link } from "react-router-dom";
-import { arrow } from "../assets/icons";
+import { arrow, github } from "../assets/icons";
 import { useTranslation } from "react-i18next";
 import CTA from "../components/CTA";
 const Projects = () => {
@@ -40,20 +40,41 @@ const Projects = () => {
                 {/* {project.description} */}
                 {t("constants.project1.description")}
               </p>
-              <div className="mt-5 flex items-center gap-2 font-poppins">
-                <Link
-                  to={project.link}
-                  target="_blank"
-                  rel="noonpener noreferrer"
-                  className="font-semibold text-blue-600"
-                >
-                  {t("projects.link")}
-                </Link>
-                <img
-                  src={arrow}
-                  alt="arrow"
-                  className="w-4 h-4 object-contain"
-                />
+              <div className="mt-5 flex items-center gap-4 font-poppins">
+                {project.link !== "" && (
+                  <>
+                    <Link
+                      to={project.link}
+                      target="_blank"
+                      rel="noonpener noreferrer"
+                      className="flex items-center gap-2 font-semibold text-blue-600"
+                    >
+                      {t("projects.link")}
+                      <img
+                        src={arrow}
+                        alt="arrow"
+                        className="w-4 h-4 object-contain"
+                      />
+                    </Link>
+                  </>
+                )}
+                {project.githubLink && (
+                  <div className="">
+                    <Link
+                      to={project.githubLink}
+                      target="_blank"
+                      rel="noonpener noreferrer"
+                      className="flex items-center gap-2 font-semibold text-blue-600"
+                    >
+                      {t("projects.github")}
+                      <img
+                        src={github}
+                        alt="github link"
+                        className="w-5 h-5 object-contain text-blue-600"
+                      />
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>
