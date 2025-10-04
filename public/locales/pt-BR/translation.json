@@ -59,7 +59,7 @@
     },
     "project1": {
       "name": "Portfolio Personalizado",
-      "description": "Construí este portfólio com Three.js, Vite, React e Tailwind CSS para demonstrar minhas habilidades em desenvolvimento web. Ele mostra minha dedicação à inovação e ao design centrado no usuário."
+      "description": "Construí este portfólio com Three.js, Vite, React e Tailwind CSS para mostrar alguns dos projetos que desenvolvi. Serve como um portfólio simples/rápido e online."
     }
   },
   "components": {

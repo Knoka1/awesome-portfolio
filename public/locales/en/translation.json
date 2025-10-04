@@ -59,7 +59,7 @@
     },
     "project1": {
       "name": "Personalized Portfolio",
-      "description": "Built this portfolio with Three.js, Vite, React, and Tailwind CSS to demonstrate my web development skills. It showcases my dedication to innovation and user-centric design."
+      "description": "Built this portfolio with Three.js, Vite, React, and Tailwind CSS to showcase my projects. It serves as a simple/quick porfolio and online CV."
     }
   },
   "components": {
