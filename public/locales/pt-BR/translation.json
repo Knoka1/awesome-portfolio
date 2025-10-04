@@ -37,23 +37,29 @@
       "point3": "Gerenciei as relações entre clientes e marcas."
     },
     "experience1": {
+      "title": "Desenvolvedor Full-Stack",
+      "point0": "Desenvolvimento de uma plataforma interna para otimizar e acelerar o onboarding de mais de 1K clientes e novas aventuras imobiliárias (Remix, Python, Django e Google Cloud).",
+      "point1": "Criação de uma nova plataforma de gerenciamento de condomínios e imóveis projetada para grandes gestores de imóveis (NextJs, C#, .NET e Google Cloud)."
+    },
+    "experience2": {
       "title": "Engenheiro de Software Full-Stack",
       "point0": "Colaborei no desenvolvimento da plataforma e do aplicativo Transfero Prime, utilizando tecnologias como React, React Native, TypeScript, .NET Core 5.0, C# e SQL.",
       "point1": "Contribuí para o desenvolvimento e manutenção da API e infraestrutura responsável por processar mais de $1 milhão diariamente em pagamentos, utilizando SQL, .NET e C#.",
       "point2": "Criei um script em Python para automatizar a atualização dos preços de várias criptomoedas.",
       "point3": "Contribuí para um time ágil de alto desempenho, composto por engenheiros de software, product owners e líderes de negócio, identificando oportunidades, falhas e desenvolvendo soluções eficazes."
     },
-    "experience2": {
+
+    "experience3": {
       "title": "Estagiário de Análise de Dados",
       "point0": "Estruturei dados de métricas-chave de produtos da Globo usando SQL, Google BigQuery e Python.",
       "point1": "Propus ideias inovadoras ao analisar o comportamento do usuário e dados comparativos (como atividade do usuário, total de usuários e dados comportamentais do Google Analytics) em todos os produtos digitais da Globo, incluindo G1, BBB, GE, GShow, Globoplay e outros, com o objetivo de relatar, aprimorar a usabilidade e analisar o comportamento do consumidor.",
       "point2": "Desenvolvi jobs e processos automatizados para buscar e visualizar dados de forma eficiente."
     },
-    "experience3": {
+    "experience4": {
       "title": "Estagiário de Inovação",
       "point0": "Contribuí para o desenvolvimento de um framework de IA (Python MVP) dedicado à gestão e tratamento de dados de consumidores, resultando em melhorias na personalização dos produtos."
     },
-    "experience4": {
+    "experience5": {
       "title": "Co-fundador e Diretor",
       "point0": "Conquistamos mais de 5 títulos em 3 diferentes modalidades de jogos, contando com um total de 100 estudantes."
     },

@@ -37,23 +37,28 @@
       "point3": "Manageg customer-brand relations"
     },
     "experience1": {
+      "title": "Full-Stack Developer",
+      "point0": "Development of an internal platform to optimize and accelerate the onboarding of over 1K clients and new real estate ventures (Remix, Python, Django, and Google Cloud).",
+      "point1": "Creation of a new condominium and property management platform designed for large real estate managers (NextJs, C#, .NET and Google Cloud)."
+    },
+    "experience2": {
       "title": "Full-Stack Software Engineer",
       "point0": "Collaborated in the development of the Transfero Prime platform and application, utilizing technologies such as React, React Native, TypeScript, .NET Core 5.0, C#, and SQL. ",
       "point1": "Contributed to the development and maintenance of the API and infrastructure responsible for processing over $1 million daily in payments, using SQL, .NET, and C#",
       "point2": "Created a Python script to automate the updating of prices for various cryptocurrencies",
       "point3": "Contributed to a high-performing agile team of software engineers, product owners, and business leaders, identifying opportunities, flaws, and developing effective solutions."
     },
-    "experience2": {
+    "experience3": {
       "title": "Data Analyst Intern",
       "point0": "Structured key product metrics data at Globo using SQL, Google BigQuery, and Python.",
       "point1": "Suggested innovative ideas by analyzing user behavior and comparative data (such as user activity, total users, and Google Analytics behavioral data) across all of Globo's digital products, including G1, BBB, GE, GShow, Globoplay, and others, aiming to report, enhance usability, and analyze consumer behavior.",
       "point2": "Developed automated jobs and processes to efficiently fetch and visualize data."
     },
-    "experience3": {
+    "experience4": {
       "title": "Innovation Intern",
       "point0": "Contributed to the development of an AI framework (Python MVP) dedicated to managing and handling consumer data, resulting in improvements in product personalization."
     },
-    "experience4": {
+    "experience5": {
       "title": "Co-Founder and Director",
       "point0": "Achieved over 5 titles in 3 different gaming categories involving a total of 100 students."
     },

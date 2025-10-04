@@ -13,6 +13,7 @@ import {
   html,
   javascript,
   linkedin,
+  lobie,
   microsoftsqlserver,
   // mongodb,
   // motion,
@@ -126,6 +127,18 @@ export const experiences = [
       "Prospect and operate Influencer Marketing campaigns with top clients like GNT, Asics, Dafiti, Skechers and others",
       "Develop APIs to fetch data and analyse Influencer's key metrics",
       "Manage customer-brand relations",
+    ],
+  },
+  {
+    title: "Full-Stack Developer",
+    index: 0,
+    company_name: "Lobie",
+    icon: lobie,
+    iconBg: "#FFFFFF",
+    date: "Sep 2024 - Apr 2025",
+    points: [
+      "Development of an internal platform to optimize and accelerate the onboarding of over 1K clients and new real estate ventures (Remix, Python, Django, and Google Cloud).",
+      "Creation of a new condominium and property management platform designed for large real estate managers (NextJs, C#, .NET and Google Cloud).",
     ],
   },
   {

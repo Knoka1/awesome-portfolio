@@ -138,12 +138,6 @@ const About = () => {
                 <li className="text-black-500/50 font-normal pl-1 text-sm">
                   {t(`constants.experience1.point1`)}
                 </li>
-                <li className="text-black-500/50 font-normal pl-1 text-sm">
-                  {t(`constants.experience1.point2`)}
-                </li>
-                <li className="text-black-500/50 font-normal pl-1 text-sm">
-                  {t(`constants.experience1.point3`)}
-                </li>
               </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -186,6 +180,9 @@ const About = () => {
                 <li className="text-black-500/50 font-normal pl-1 text-sm">
                   {t(`constants.experience2.point2`)}
                 </li>
+                <li className="text-black-500/50 font-normal pl-1 text-sm">
+                  {t(`constants.experience2.point3`)}
+                </li>
               </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -222,6 +219,12 @@ const About = () => {
                 <li className="text-black-500/50 font-normal pl-1 text-sm">
                   {t(`constants.experience3.point0`)}
                 </li>
+                <li className="text-black-500/50 font-normal pl-1 text-sm">
+                  {t(`constants.experience3.point1`)}
+                </li>
+                <li className="text-black-500/50 font-normal pl-1 text-sm">
+                  {t(`constants.experience3.point2`)}
+                </li>
               </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -257,6 +260,42 @@ const About = () => {
               <ul className="my-5 list-disc ml-5 space-y-2">
                 <li className="text-black-500/50 font-normal pl-1 text-sm">
                   {t(`constants.experience4.point0`)}
+                </li>
+              </ul>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date={experiences[5].date}
+              icon={
+                <div className="flex justify-center items-center w-full h-full">
+                  <img
+                    src={experiences[5].icon}
+                    alt={experiences[5].company_name}
+                    className="w-[60%] h-[60%] object-contain"
+                  />
+                </div>
+              }
+              iconStyle={{ background: experiences[5].iconBg }}
+              contentStyle={{
+                borderBottom: "8px",
+                borderStyle: "solid",
+                borderBottomColor: experiences[5].iconBg,
+                boxShadow: "none",
+              }}
+            >
+              <div>
+                <h3 className="text-black text-xl font-poppins font-semibold">
+                  {t(`constants.experience5.title`)}
+                </h3>
+                <p
+                  className="text-black font-medium font-base"
+                  style={{ margin: 0 }}
+                >
+                  {experiences[5].company_name}
+                </p>
+              </div>
+              <ul className="my-5 list-disc ml-5 space-y-2">
+                <li className="text-black-500/50 font-normal pl-1 text-sm">
+                  {t(`constants.experience5.point0`)}
                 </li>
               </ul>
             </VerticalTimelineElement>
