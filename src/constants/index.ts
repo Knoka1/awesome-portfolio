@@ -34,7 +34,7 @@ import {
   typescript,
 } from "../assets/icons";
 // import { useTranslation } from "react-i18next";
-import cv2024 from "../assets/cv2024.pdf";
+import updatedCV from "../assets/updatedCV.pdf";
 export const skills = [
   {
     imageUrl: html,
@@ -201,7 +201,7 @@ export const socialLinks = [
     name: "CV",
     index: 3,
     iconUrl: cvicon,
-    link: cv2024,
+    link: updatedCV,
   },
 ];
 //TODO add and update projects
