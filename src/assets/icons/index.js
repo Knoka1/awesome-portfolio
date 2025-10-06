@@ -34,6 +34,7 @@ import threads from "./threads.svg";
 import arrow from "./arrow.svg";
 import contact from "./contact.svg";
 import lobie from "./lobie_logo.png";
+import ps_logo from "./PS_1024x1024.png";
 
 export {
   angular,
@@ -72,4 +73,5 @@ export {
   arrow,
   contact,
   lobie,
+  ps_logo,
 };
