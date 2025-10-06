@@ -70,6 +70,10 @@
       "purple-swaps": {
         "name": "Purple Swaps - Meeting App",
         "description": "Built this project as an alternative for Northwestern students to be able to meet new groups and friends across a variety of different events with Next15, React, Tailwind CSS, Vercel and Prisma. It's a working real application, that has been used by students."
+      },
+      "treasure-trails": {
+        "name": "TreasureTrails - A neopets like concept game",
+        "description": "TreasureTrails was built as a landing page to check the interest in an idea for a game inspired by Neopets for nowadays. It was built using Nextjs15, React, AI for images and videos and Mailchimp"
       }
     }
   },
