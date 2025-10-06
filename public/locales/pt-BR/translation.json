@@ -63,9 +63,15 @@
       "title": "Co-fundador e Diretor",
       "point0": "Conquistamos mais de 5 títulos em 3 diferentes modalidades de jogos, contando com um total de 100 estudantes."
     },
-    "project1": {
-      "name": "Portfolio Personalizado",
-      "description": "Construí este portfólio com Three.js, Vite, React e Tailwind CSS para mostrar alguns dos projetos que desenvolvi. Serve como um portfólio simples/rápido e online."
+    "projects": {
+      "personalized-portfolio": {
+        "name": "Portfolio Personalizado",
+        "description": "Construí este portfólio com Three.js, Vite, React e Tailwind CSS para mostrar alguns dos projetos que desenvolvi. Serve como um portfólio simples/rápido e online."
+      },
+      "purple-swaps": {
+        "name": "Purple Swaps - Aplicativo para conhecer pessoas",
+        "description": "Construí esse projeto como uma alternativa para conectar alunos da Northwestern permitindo que conheçam novos grupos e façam mais amigos participando em diferentes eventos, usando Next15, React, Tailwind CSS, Vercel e Prisma. É uma aplicação real que já foi usada por estudantes."
+      }
     }
   },
   "components": {
