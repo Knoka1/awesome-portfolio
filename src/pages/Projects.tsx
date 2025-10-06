@@ -20,7 +20,7 @@ const Projects = () => {
       </div>
       <div className="flex flex-wrap my-20 gap-16">
         {projects.map((project) => (
-          <div className="lg:w-[400px] w-full" key={project.name}>
+          <div className="lg:w-[400px] w-full" key={project.id}>
             <div className="block-container w-12 h-12">
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className="btn-front rounded-xl flex justify-center items-center">
@@ -33,47 +33,41 @@ const Projects = () => {
             </div>
             <div className="mt-5 flex flex-col">
               <h4 className="text-xl font-poppins font-semibold">
-                {/* {project.name} */}
-                {t("constants.project1.name")}
+                {t(`constants.projects.${project.id}.name` as any)}
               </h4>
               <p className="mt-2 text-slate-500">
-                {/* {project.description} */}
-                {t("constants.project1.description")}
+                {t(`constants.projects.${project.id}.description` as any)}
               </p>
               <div className="mt-5 flex items-center gap-4 font-poppins">
-                {project.link !== "" && (
-                  <>
-                    <Link
-                      to={project.link}
-                      target="_blank"
-                      rel="noonpener noreferrer"
-                      className="flex items-center gap-2 font-semibold text-blue-600"
-                    >
-                      {t("projects.link")}
-                      <img
-                        src={arrow}
-                        alt="arrow"
-                        className="w-4 h-4 object-contain"
-                      />
-                    </Link>
-                  </>
+                {project.link && project.link !== "" && (
+                  <Link
+                    to={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 font-semibold text-blue-600"
+                  >
+                    {t("projects.link")}
+                    <img
+                      src={arrow}
+                      alt="arrow"
+                      className="w-4 h-4 object-contain"
+                    />
+                  </Link>
                 )}
-                {project.githubLink && (
-                  <div className="">
-                    <Link
-                      to={project.githubLink}
-                      target="_blank"
-                      rel="noonpener noreferrer"
-                      className="flex items-center gap-2 font-semibold text-blue-600"
-                    >
-                      {t("projects.github")}
-                      <img
-                        src={github}
-                        alt="github link"
-                        className="w-5 h-5 object-contain text-blue-600"
-                      />
-                    </Link>
-                  </div>
+                {project.githubLink && project.githubLink !== "" && (
+                  <Link
+                    to={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 font-semibold text-blue-600"
+                  >
+                    {t("projects.github")}
+                    <img
+                      src={github}
+                      alt="github link"
+                      className="w-5 h-5 object-contain text-blue-600"
+                    />
+                  </Link>
                 )}
               </div>
             </div>
