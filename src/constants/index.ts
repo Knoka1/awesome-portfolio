@@ -30,6 +30,7 @@ import {
   // summiz,
   tailwindcss,
   transfero,
+  treasuretrails,
   threads,
   typescript,
 } from "../assets/icons";
@@ -246,11 +247,13 @@ export const projects = [
     link: "https://wildcatmeeting.vercel.app/#how-it-works",
     githubLink: "",
   },
-  // {
-  //   iconUrl: estate,
-  //   theme: "btn-back-black",
-  //   link: "https://github.com/adrianhajdin/projects_realestate",
-  // },
+  {
+    id: "treasure-trails",
+    iconUrl: treasuretrails,
+    theme: ".btn-back-yellow",
+    link: "https://www.treasuretrailsgame.com/en",
+    githubLink: "",
+  },
   // {
   //   iconUrl: summiz,
   //   theme: "btn-back-yellow",

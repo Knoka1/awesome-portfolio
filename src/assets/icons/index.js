@@ -35,6 +35,7 @@ import arrow from "./arrow.svg";
 import contact from "./contact.svg";
 import lobie from "./lobie_logo.png";
 import ps_logo from "./PS_1024x1024.png";
+import treasuretrails from "./treasuretrails_logo.png";
 
 export {
   angular,
@@ -62,6 +63,7 @@ export {
   linkedin,
   twitter,
   transfero,
+  treasuretrails,
   car,
   estate,
   pricewise,
