@@ -229,7 +229,7 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .block-container .btn-back-pink {
-  background: linear-gradient(135deg, #e81cff -20%, #40c9ff 120%);
+  background: linear-gradient(135deg, #351e6a -20%, #351e6a 120%);
 }
 
 .block-container .btn-back-black {
